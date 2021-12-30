@@ -20,10 +20,6 @@ class Secrets:
         url = f"{self.api}/cipher_type"
         headers = {'x-api-key': self.api_key}
 
-        print(url)
-        print(headers)
-        print(self.api, self.api_key)
-
         print(f"\nGetting cipher from /cipher_type...")
 
         while True:
@@ -38,7 +34,7 @@ class Secrets:
                     exit()
 
                 print(f"Error: retrying...")
-                sleep(0.1)
+                sleep(.5)
 
         cipher = r.json()['cipher']
 

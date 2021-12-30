@@ -1,4 +1,4 @@
-python-pillow
+python-dotenv
 requests
 pillow
 pytest

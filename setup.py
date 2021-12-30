@@ -29,7 +29,7 @@ setuptools.setup(
 
     python_requires='>=3.9',
 
-    install_requires=["requests"],
+    install_requires=["requests", "python-dotenv", "pillow", "pytest"],
 
     package_dir={'': 'src'},
 
